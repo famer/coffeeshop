@@ -1,0 +1,207 @@
+[
+	{
+	"title": "Pons Classic / Понс Классик",
+	"description": "Классический изысканный вкус и крепость Понс",
+	"price": "495 р. за блок из 5 сигарет",
+	"img": "pons_box_classic.jpg",
+	"brand": "pons",
+	"specs": [
+			"заменяет блок обычных сигарет",
+			"5 сигарет в блоке, 1 сигарета 99 рублей"
+			]
+	},{
+	"title": "Pons Lights / Понс Лайтс",
+	"description": "Облегченные по никотину сигареты Понс с классическим вкусом",
+	"price": "495 р. за блок из 5 сигарет",
+	"img": "pons_box_classic.jpg",
+	"brand": "pons",
+	"specs": [
+			"заменяет блок обычных сигарет",
+			"5 сигарет в блоке, 1 сигарета 99 рублей"
+			]
+	},{
+	"title": "Pons Ultralights / Понс Ультралайтс",
+	"description": "Очень легкие по никотину сигареты Понс с классическим вкусом",
+	"price": "495 р. за блок из 5 сигарет",
+	"img": "pons_box_classic.jpg",
+	"brand": "pons",
+	"specs": [
+			"заменяет блок обычных сигарет",
+			"5 сигарет в блоке, 1 сигарета 99 рублей"
+			]
+	},{
+	"title": "Pons Zero / Понс Зеро",
+	"description": "Сигареты Понс без никотина с классическим вкусом",
+	"price": "495 р. за блок из 5 сигарет",
+	"img": "pons_box_classic.jpg",
+	"brand": "pons",
+	"specs": [
+			"заменяет блок обычных сигарет",
+			"5 сигарет в блоке, 1 сигарета 99 рублей"
+			]
+	},{
+	"title": "Pons Ice / Понс Айс",
+	"description": "Сигареты Понс с ледяной мятой, придающей особую тонкость классическому вкусу",
+	"price": "495 р. за блок из 5 сигарет",
+	"img": "pons_box_ice.jpg",
+	"brand": "pons",
+	"specs": [
+			"Крепость по никотину соответствует Лайтс",
+			"заменяет блок обычных сигарет",
+			"5 сигарет в блоке, 1 сигарета 99 рублей"
+			]
+	},{
+	"title": "Pons Cola / Понс. Кола",
+	"description": "Для любителей напитка Кола двойное удовольствие от курения Понс",
+	"price": "495 р. за блок из 5 сигарет",
+	"img": "pons_box_cola.jpg",
+	"brand": "pons",
+	"specs": [
+			"Крепость по никотину соответствует Лайтс",
+			"заменяет блок обычных сигарет",
+			"5 сигарет в блоке, 1 сигарета 99 рублей"
+			]
+	},
+	{
+	"title": "Noqo Classic",
+	"description": "Классический изысканный вкус и крепость",
+	"price": "99 р.",
+	"img": "noqo/n1.jpg",
+	"brand": "noqo",
+	"specs": []
+	},{
+	"title": "Noqo Lights (Лайтс)",
+	"description": "Облегченные по никотину сигареты",
+	"price": "99 р.",
+	"img": "noqo/n2.jpg",
+	"brand": "noqo",
+	"specs": []
+	},{
+	"title": "Noqo Ultralights (Ультралайтс)",
+	"description": "Очень легкие по никотину сигареты",
+	"price": "99 р.",
+	"img": "noqo/n3.jpg",
+	"brand": "noqo",
+	"specs": []
+	},{
+	"title": "Noqo Zero (Зеро, без никонтина)",
+	"description": "Сигареты без никотина",
+	"price": "99 р.",
+	"img": "noqo/n20.jpg",
+	"brand": "noqo",
+	"specs": []
+	},
+	{
+	"title": "Noqo Juicy Watermelon (Сочный арбуз)",
+	"description": "Крепость по никотину соответствует Лайтс",
+	"price": "99 р.",
+	"img": "noqo/n4.jpg",
+	"brand": "noqo",
+	"specs": []
+	},{
+	"title": "Noqo Аpple Orchard (Яблоневый сад)",
+	"description": "Крепость по никотину соответствует Лайтс",
+	"price": "99 р.",
+	"img": "noqo/n5.jpg",
+	"brand": "noqo",
+	"specs": []
+	},{
+	"title": "Noqo Сoffee&Cream (Кофе со сливками)",
+	"description": "Крепость по никотину соответствует Лайтс",
+	"price": "99 р.",
+	"img": "noqo/n6.jpg",
+	"brand": "noqo",
+	"specs": []
+	},{
+	"title": "Noqo Vanilla Souffle (Ванильное суфле)",
+	"description": "Крепость по никотину соответствует Лайтс",
+	"price": "99 р.",
+	"img": "noqo/n7.jpg",
+	"brand": "noqo",
+	"specs": []
+	},{
+	"title": "Noqo Hot Сhocolate (Горячий шоколад)",
+	"description": "Крепость по никотину соответствует Лайтс",
+	"price": "99 р.",
+	"img": "noqo/n8.jpg",
+	"brand": "noqo",
+	"specs": []
+	},{
+	"title": "Noqo Energetic (Энергетик)",
+	"description": "Крепость по никотину соответствует Лайтс",
+	"price": "99 р.",
+	"img": "noqo/n9.jpg",
+	"brand": "noqo",
+	"specs": []
+	},{
+	"title": "Noqo Berries (Лесные ягоды)",
+	"description": "Крепость по никотину соответствует Лайтс",
+	"price": "99 р.",
+	"img": "noqo/n10.jpg",
+	"brand": "noqo",
+	"specs": []
+	},{
+	"title": "Noqo Tropical Mix (Тропический микс)",
+	"description": "Крепость по никотину соответствует Лайтс",
+	"price": "99 р.",
+	"img": "noqo/n11.jpg",
+	"brand": "noqo",
+	"specs": []
+	},{
+	"title": "Noqo Strawberry Dessert (Клубничный десерт)",
+	"description": "Крепость по никотину соответствует Лайтс",
+	"price": "99 р.",
+	"img": "noqo/n12.jpg",
+	"brand": "noqo",
+	"specs": []
+	},{
+	"title": "Noqo Mellow Pear (Спелая груша)",
+	"description": "Крепость по никотину соответствует Лайтс",
+	"price": "99 р.",
+	"img": "noqo/n13.jpg",
+	"brand": "noqo",
+	"specs": []
+	},{
+	"title": "Noqo Mint Breeze (Мятный бриз)",
+	"description": "Крепость по никотину соответствует Лайтс",
+	"price": "99 р.",
+	"img": "noqo/n14.jpg",
+	"brand": "noqo",
+	"specs": []
+	},{
+	"title": "Noqo Сoconut Paradise (Кокосовый рай)",
+	"description": "Крепость по никотину соответствует Лайтс",
+	"price": "99 р.",
+	"img": "noqo/n15.jpg",
+	"brand": "noqo",
+	"specs": []
+	},{
+	"title": "Noqo Blackcurrant (Черная смородина)",
+	"description": "Крепость по никотину соответствует Лайтс",
+	"price": "99 р.",
+	"img": "noqo/n16.jpg",
+	"brand": "noqo",
+	"specs": []
+	},{
+	"title": "Noqo Сoffee Сaramel (Кофейная карамель)",
+	"description": "Крепость по никотину соответствует Лайтс",
+	"price": "99 р.",
+	"img": "noqo/n17.jpg",
+	"brand": "noqo",
+	"specs": []
+	},{
+	"title": "Noqo Fresh Orange (Апельсиновый фреш)",
+	"description": "Крепость по никотину соответствует Лайтс",
+	"price": "99 р.",
+	"img": "noqo/n18.jpg",
+	"brand": "noqo",
+	"specs": []
+	},{
+	"title": "Noqo Green Tea (Зеленый чай)",
+	"description": "Крепость по никотину соответствует Лайтс",
+	"price": "99 р.",
+	"img": "noqo/n19.jpg",
+	"brand": "noqo",
+	"specs": []
+	}
+]

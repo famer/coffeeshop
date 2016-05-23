@@ -1,0 +1,54 @@
+[
+{
+	title: "Бразилия Бурбон -", price: "1 020.00", description: "", img: "coffee.png"},
+{
+	title: "Бразилия Ипанема Дульче ", price: "271.00", description: "- ", img: "coffee.png"},
+{
+	title: "Бразилия Сантос", price: "225.00", description: "", img: "coffee.png"},
+{
+	title: "Гондурас", price: "960.00", description: "-  ", img: "coffee.png"},
+{
+	title: "Гватемала", price: "262.00", description: " –", img: "coffee.png"},
+{
+	title: "Замбия АА ", price: "260.00", description: "–", img: "coffee.png"},
+{
+	title: "Зимбабве АА", price: "260.00", description: " ", img: "coffee.png"},
+{
+	title: "Индия Монсунд Малабар", price: "273.00", description: "", img: "coffee.png"},
+{
+	title: "Индонезия Сулавеси", price: "280.00", description: " –", img: "coffee.png"},
+{
+	title: "Индонезия Суматра", price: "285.00", description: "", img: "coffee.png"},
+{
+	title: "Колумбия", price: "252.00", description: " - ", img: "coffee.png"},
+{
+	title: "Кения АА", price: "276.00", description: "", img: "coffee.png"},
+{
+	title: "Колумбия", price: "261.00", description: " Декаф (без кофеина) – ", img: "coffee.png"},
+{
+	title: "Коста - Рика ", price: "254.00", description: "- ", img: "coffee.png"},
+{
+	title: "Куба Альтура ", price: "240.00", description: "– ", img: "coffee.png"},
+{
+	title: "Марагоджип Гватемала", price: "285.00", description: " - Зерна этого сорта дают ароматный, средне-насыще…, вкус нежный, цветочный с приятным послевкусием.", img: "coffee.png"},
+{
+	title: "Марагоджип Колумбия", price: "285.00", description: " - ", img: "coffee.png"},
+{
+	title: "Марагоджип Мексика ", price: "270.00", description: "", img: "coffee.png"},
+{
+	title: "Марагоджип Никарагуа", price: "270.00", description: "", img: "coffee.png"},
+{
+	title: "Мексика ", price: "230.00", description: "– богатый букет с ярковыраженными фруктовыми нотками, бархатистый вкус и замечательный аромат.↵", img: "coffee.png"},
+{
+	title: "Никарагуа", price: "224.00", description: " - Кофе отличается высокой плотностью с ярко выраж…олоноватым вкусом, обладает прекрасным ароматом.↵", img: "coffee.png"},
+{
+	title: "Папуа Новая Гвинея Сигри АА ", price: "240.00", description: "– этот кофе поразит Вас глубиной своего вкуса, отт…. Богатый обволакивающий вкус, с нотками орехов.↵", img: "coffee.png"},
+{
+	title: "Танзания ", price: "249.00", description: "- ", img: "coffee.png"},
+{
+	title: "Эфиопия Сидамо Мокка", price: "260.00", description: " - обладает великолепным букетом, имеет особый инд…енный по сравнению с другими эфиопскими сортами.↵", img: "coffee.png"},
+{
+	title: "Эфиопия «Дикий лес» Бонга Форест", price: "278.00", description: " — обладает неподражаемым ароматом и хорошей конси…чный вкус, богатый, с винно-фруктовыми оттенками.", img: "coffee.png"},
+{
+	title: "фиопия  Иргачифф", price: "268.00", description: " - кофе дает богатый настой, удивительно долгое по…вкусом, в котором явно ощущаются цветочные нотки.", img: "coffee.png"},
+]

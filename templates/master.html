@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Кофе | {% block title %} {% endblock %}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+<link href={{ url_for('static', filename='css/prettyPhoto.css') }} rel="stylesheet" type="text/css" />
+<link rel="stylesheet" id="camera-css"  href={{ url_for('static', filename='css/camera.css') }} type="text/css" media="all">
+<link href={{ url_for('static', filename='css/bootstrap.css') }} rel="stylesheet">
+<link href={{ url_for('static', filename='css/theme.css') }} rel="stylesheet">
+<link rel="stylesheet" type="text/css" href={{ url_for('static', filename='css/skins/tango/skin.css') }} />
+<link href={{ url_for('static', filename='css/bootstrap-responsive.css') }} rel="stylesheet">
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->    
+</head>
+<body>
+	<div class="top_block">
+    	<div class="wrap">
+        	<div class="container">
+                <div class="row">
+                    <div class="span6">Электронные сигареты</div>
+                    <div class="span6 follow_us">
+                        <ul>
+                            <li><a href="#" class="facebook">Facebook</a></li>
+                            <li><a href="#" class="twitter">Вконтакте</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--header-->
+    <div class="header">
+    	<div class="wrap">
+        	<div class="navbar navbar_ clearfix">
+            	<div class="container">
+                    <div class="row">
+                        <div class="span3">
+                        	<div class="logo"><a href="/"><img src={{ url_for('static', filename='img/logo.png') }} alt="" /></a></div>                        
+                        </div>
+                        <div class="span9">
+                            <nav id="main_menu">
+                                <div class="menu_wrap">
+                                    <ul class="nav sf-menu">
+                                      <li {% block index %}{% endblock %}><a href="/">Главная</a><span class="menu_t">Основаная информация</span></li>
+
+                                      <li {% block gallery %}{% endblock %}><a href="gallery.html">Галерея</a><span class="menu_t">Галерея товаров</span></li>
+                                      
+                                      <li {% block about %}{% endblock %}><a href="about.html">О нас</a><span class="menu_t">О магазине</span></li>
+                                      
+                                      <li {% block contacts %}{% endblock %}><a href="contacts.html">Контакты</a><span class="menu_t">Как с нами связаться</span></li>
+                                    </ul>
+                                </div>
+                             </nav>                            
+                        </div>
+                    </div>                
+                </div>
+             </div>
+        </div>    
+    </div>
+    <!--//header-->
+    
+    {% block body %}{% endblock %}
+
+    <!--footer-->
+    <div id="footer">
+      <!--div class="wrap">
+        <div class="container">
+              <div class="row">
+                  <div class="span3">
+                      <h2 class="title">Latest tweets</h2>
+                        <div class="tweet_block"></div>                       
+                    </div>
+                    <div class="span3">
+                      <h2 class="title">flickr photostream</h2>
+                        <div class="flickrs">
+                            <div class="FlickrImages">
+                                <ul></ul>
+                                <div class="clear"></div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="span3">
+                      <h2 class="title">Testimonials</h2>
+                        <ul>
+                          <li>
+                              <span class="testimonials_arrow"></span>Orci nisi, luctus vitae imperdiet a, iquam vel urna. Pellentesque tincidunt laoreet est, in tristique sapien consequat a purus at ullamcorper pulvinar, massa libero magna.
+                              <div class="clear"></div>
+                                <div class="author">Anna Smith, Company inc.</div>
+                            </li>
+                            <li>
+                              <span class="testimonials_arrow"></span>Luctus vitae imperdiet a, iquamorci nisi lorem. Pellentesque tincidunt laoreet est, in tristique sapien consequat a purus at ullam pulvinar, massa libero consequat egestas mas.
+                              <div class="clear"></div>
+                                <div class="author">John Doe, Company inc.</div>
+                            </li>
+                        </ul>                     
+                    </div>
+                    <div class="span3">
+                      <h2 class="title">Get in touch!</h2>
+                        <form action="#" method="post">
+                          <input class="span3" type="text" name="name" id="name" value="Name" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
+                            <input class="span3" type="text" name="email" id="email" value="Email" onFocus="if (this.value == 'Email') this.value = '';" onBlur="if (this.value == '') this.value = 'Email';" />
+                            <textarea name="message" id="message" class="span3" onFocus="if (this.value == 'Message') this.value = '';" onBlur="if (this.value == '') this.value = 'Message';" >Message</textarea>
+                            <div class="clear"></div>
+                            <input type="reset" class="btn" value="Clear form" />
+                            <input type="submit" class="btn btn-success" value="Send" />
+                            <div class="clear"></div>
+                        </form>
+                    </div>                  
+              </div>
+          </div>            
+        </div-->
+        
+        <div class="footer_bottom">
+            <div class="wrap">
+              <div class="container">
+                  <div class="row">
+                    <div class="span4">
+                          <div class="foot_logo"><a href="index.html"><img src={{ url_for('static', filename='img/foot_logo.png') }} alt="" /></a></div>    
+                          <div class="copyright">&copy; Создание сайта Тимур Татаршаов.</div>                        
+                        </div>
+                        <div class="span8">
+                          <div class="foot_right_block">
+                              <div class="fright">
+                                  <!--form action="#" method="post">
+                                        <input class="inp_search" name="name" type="text" value="Search the Site" onfocus="if (this.value == 'Search the Site') this.value = '';" onblur="if (this.value == '') this.value = 'Search the Site';" />                                        
+                                    </form-->
+                                </div>
+                                <div class="follow_us">
+                                  <ul>
+                                        <li><a rel="tooltip" href="#" title="Facebook" class="facebook">Facebook</a></li>
+                                        <li><a rel="tooltip" href="#" title="Вконтакте" class="twitter">Вконтакте</a></li>
+                                    </ul>
+                                </div>
+                                <div class="clear"></div>
+                            
+                              <div class="clear"></div>
+                              <div class="foot_menu">
+                                <ul>
+                                        <li><a href="index.html" class="current">Главная</a></li>
+                                        <li><a href="about.html">О нас</a></li>
+                                        
+                                        <li><a href="contacts.html">Контакты</a></li>
+                                    </ul>
+                              </div>
+                            </div>                            
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//footer-->    
+    {% block bottom %}{% endblock %}
+</body>
+</html>
+

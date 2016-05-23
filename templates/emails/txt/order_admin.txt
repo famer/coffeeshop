@@ -1,0 +1,27 @@
+Пользователь с именем
+{{ form['name'] }}
+
+
+Телефон:
+{{ form['phone'] }}
+
+
+Email:
+{{ form['email'] }}
+
+
+Адрес: 
+{{ form['address'] }}
+
+
+Заказал:
+
+{% for key, esig in ordered if esig %}
+
+{{ esigs[key]['title'] }}: {{ esig }}
+
+{% endfor %}
+
+
+Комментарий: 
+{{ form['message'] }}

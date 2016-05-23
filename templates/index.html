@@ -1,0 +1,250 @@
+{% extends "master.html" %}
+{% block title %} Главная {% endblock %}
+{% block index %} class="current" {% endblock %}
+{% block body %}
+   
+    <!--page_container-->
+    <div class="page_container">
+        <!--Welcome-->
+        <div class="wrap">
+            <div class="container welcome_block"><span>Галерея товаров</span>Вашему вниманию предствалены основные товары нашего магазина.</div>
+        </div>
+        <!--//Welcome-->
+        
+        <!--slider-->
+        <div id="main_slider">
+            <div class="wrap">
+                <div class="container">
+                    <div class="camera_wrap" id="camera_wrap_1">
+                        <div data-src={{ url_for('static', filename='img/slider/coffeemap.jpg') }}>
+                            <div class="camera_caption fadeIn">
+                            	<h2>Кофе</h2><br>
+                                <div class="slide_descr"></div>
+                            </div>
+                        </div>
+                                                
+                    </div>
+                    
+                </div>
+            </div>    	
+        </div>
+        <!--//slider-->
+               
+        
+        
+        
+        
+        
+        
+        <!--latest posts-->
+        <div class="wrap block carousel_block">
+            <div class="container">
+            	<h2 class="upper">Почему кофе</h2>
+            	<div class="row">
+                    <div class="span3">
+                        {{ lipsum(n=4, max=30)}}
+                        <a href="#" class="btn dark_btn">заказать</a> 
+                    </div>
+                    <div class="span9">
+                        <ul id="mycarousel2" class="jcarousel-skin-tango">
+                            {% for esig in esigs[:4] %}
+                            <li>
+                            	<div class="post_carousel">
+                                	<img src="{{ url_for('static', filename='img/coffee/' + esig['img'] ) }}" alt="" />
+                                	<div class="title_t"><a href="#">{{ esig['title'] }}</a></div>
+                                    {{ esig['description'] }}
+                                    
+                                </div>	
+                            </li>
+                            {% endfor %}
+                                                                                                              
+                        </ul>                        
+                    </div>                
+                </div>                
+            </div>
+        </div>        
+        <!--//latest posts--> 
+
+        <!--form container--> 
+        <div class="wrap">
+            <div class="container">
+                
+                <section>
+                    <div>
+                        <h2 class="title"><span>Заказать с доставкой</span></h2>
+                        <div class="contact_form">  
+                            
+                            {% with messages = get_flashed_messages() %}
+                              {% if messages %}
+                              <section class="alert alert-error">
+                                <ul id="errors" style="margin-top:10px;">
+                                {% for message in messages %}
+                                  <li>{{ message }}</li>
+                                {% endfor %}
+                                
+                              {% else %}
+                              <section style="display:none" class="alert alert-error">
+                                <ul id="errors" style="margin-top:10px;">
+
+                              {% endif %}
+                            {% endwith %}
+                                </ul>
+                            </section>
+                            <div id="note">Пожалуйста заполняйте форму аккуратно и внимательно</div>
+                            <div id="fields">
+                                <form id="order_form" name="order_form" class="" method="POST" action="/post">
+                                    <input class="span5" type="text" name="name" value="{{ form['name'] }}" placeholder="ФИО (обязательно)" />
+                                    <br />
+
+                                   
+                                    <input class="span4" type="text" name="phone" value="{{ form['phone'] }}" placeholder="Сотовый или городской телефон (обязательно)" />
+                                       
+
+                                    <input class="span2" type="text" name="email" value="{{ form['email'] }}" placeholder="Email (обязательно)" />
+                                    
+
+                                    <input class="span7" type="text" name="address" value="{{ form['address'] }}" placeholder="Адрес (обязательно)" />
+
+                                    <textarea name="message" id="message" class="span7" placeholder="Комментарий">{{ form['message'] }}</textarea>
+
+                                    <div class="clear"></div>
+                                    <br />
+                                    <input type="submit" class="btn btn-success" value="Заказать" />
+                                    <div class="clear"></div>
+                                    <br />
+
+                                    {% for esig in esigs %}
+                                    <div class="row">
+                                        <div class="span6">
+                                            <h2 class="title"><span>{{ esig['title'] }}</span></h2>
+                                            <div class="row">
+                                                <div class="span2">
+                                                    <p>{{ esig['description'] }}</p>
+                                                    <ul>
+                                                        {% for spec in esig['specs'] %}
+                                                        <li>{{ spec }}</li>
+                                                        {% endfor %}
+                                                    </ul>
+                                                    <p>{{ esig['price'] }}</p>
+                                                </div>
+                                                <img class="span2" alt="" src={{ url_for('static', filename='img/coffee/' + esig['img']) }}>
+                                                <div class="span2">
+                                                    Количество:
+                                                    <input class="span1" type="text" name="esig" value="" />
+                                                </div>
+                                               
+
+                                            </div>
+                                            
+                                        </div> 
+                                    </div>
+                                    {% endfor %}
+
+
+                                   
+
+                                        
+
+                                    
+                                    <div class="clear"></div>
+                                    <br />
+                                    <input type="submit" class="btn btn-success" value="Заказать" />
+                                    <div class="clear"></div>
+                                </form>
+                            </div>
+                        </div>                   
+                    </div>
+                </section>     
+                <section>
+                    <h2 class="title"><span>Информация о доставке</span></h2>
+                    {{ lipsum()}}
+                    
+                </section>
+            </div>
+        </div>
+        <!--//form container-->
+
+    </div>
+    <!--//page_container-->
+{% endblock %}
+
+{% block bottom %}    
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src={{ url_for('static', filename='js/jquery.easing.1.3.js') }}></script>
+    <script type="text/javascript" src={{ url_for('static', filename='js/jquery.mobile.customized.min.js') }}></script>
+    <script type="text/javascript" src={{ url_for('static', filename='js/camera.js') }}></script> 
+    <script src={{ url_for('static', filename='js/bootstrap.js') }}></script>
+    <script src={{ url_for('static', filename='js/superfish.js') }}></script>
+    <script type="text/javascript" src={{ url_for('static', filename='js/jquery.prettyPhoto.js') }}></script>
+    <script type="text/javascript" src={{ url_for('static', filename='js/jquery.jcarousel.js') }}></script>
+    <script type="text/javascript" src={{ url_for('static', filename='js/jquery.tweet.js') }}></script>
+    <script type="text/javascript" src={{ url_for('static', filename='js/myscript.js') }}></script>
+    <script type="text/javascript" src={{ url_for('static', filename='js/validate.min.js') }}></script>
+    <script type="text/javascript" src={{ url_for('static', filename='js/validate_.js') }}></script>
+    <script type="text/javascript">
+        fhash = '{{ fhash }}';
+		$(document).ready(function(){	
+			//Slider
+			$('#camera_wrap_1').camera();		
+			
+			//Featured works & latest posts
+			$('#mycarousel, #mycarousel2').jcarousel();
+			
+			//prettyPhoto
+			$("a[rel^='prettyPhoto']").prettyPhoto();
+			
+			//Image hover
+			$(".hover_img").live('mouseover',function(){
+					var info=$(this).find("img");
+					info.stop().animate({opacity:0},300);
+					$(".preloader").css({'background':'none'});
+				}
+			);
+			$(".hover_img").live('mouseout',function(){
+					var info=$(this).find("img");
+					info.stop().animate({opacity:1},300);
+					$(".preloader").css({'background':'none'});
+				}
+			);							
+		});	
+            
+
+        var validator = new FormValidator('order_form', [{
+            name: 'name',
+            display: 'Имя пользователя',    
+            rules: 'required'
+        },{
+            name: 'phone',
+            display: 'Телефон',    
+            rules: 'required'
+        },{
+            name: 'email',
+            display: 'e-mail адрес',    
+            rules: 'required|valid_email'
+        },{
+            name: 'address',
+            display: 'Адрес',    
+            rules: 'required'
+        }], function(errors, event) {
+            var sum = 0;
+            $.each(order_form['esig'], function(k, el) { 
+                sum += Number( $(el).val() );
+                });
+            if (!sum) { 
+                errors.push({
+                    name: 'esig',
+                    message: 'Вы должны выбрать хотя бы один товар, количество указывается цифрой',
+                    rule: 'required'
+                });
+            }
+            if (errors.length > 0) {
+                $('#errors').parent().show();
+                $('#errors').empty();
+               for ( k in errors ) {
+                    $('#errors').append($('<li>' + errors[k].message + '</li>'));
+                };
+            }
+        }).setMessage('required', 'Вы должны заполнить поле %s.').setMessage('valid_email', 'Поле %s не корректно'); 	
+	</script>
+{% endblock %}
+
